@@ -36,7 +36,7 @@ const myObject = {
     'game1': 'NNFS',
     'game2': 'Spiderman'  
 }
-
+//for of loop
 for (const [key, value] of map){
     console.log(key, ':-', value);
     
@@ -44,11 +44,11 @@ for (const [key, value] of map){
 
 
 const myObkect = {
-    'game1' : 'NFS'
+    'game1' : 'NFS',
     'game2' : 'Spiderman'
 }
 
-for (const [key, value] of myObject){
-    console.log(key, ':-', CSSMath);
+// for (const [key, value] of myObject){
+//     console.log(key, ':-', value);
     
-}
+// }
