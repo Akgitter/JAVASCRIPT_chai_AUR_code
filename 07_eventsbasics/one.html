@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body style="background-color: #414141; color: rgb(60, 118, 169)">
+    <h2>Amazing Image</h2>
+    <div>
+      <ul id="images">
+        <li>
+          <img
+            width="200px"
+            id="Girl"
+            src="https://cdn.pixabay.com/photo/2023/08/06/14/34/woman-8173091_1280.jpg"
+            alt="Women"
+          />
+        </li>
+        <li>
+          <img
+            width="200px"
+            id="love"
+            src="https://cdn.pixabay.com/photo/2024/02/08/04/37/vietnam-8560196_1280.jpg"
+            alt="Love"
+          />
+        </li>
+        <li>
+          <img
+            width="200px"
+            id="book"
+            src="https://cdn.pixabay.com/photo/2025/01/26/08/38/heart-9360465_1280.jpg "
+            alt="Book"
+          />
+        </li>
+      </ul>
+    </div>
+  </body>
+  <script>
+    // document.getElmentById('Book').onclick = function(){
+    //     alert("owl clicker")
+    // }
+    //attackEvent()
+    //jQuery - on event listner
+
+    //type, timestamp, defaultPrevented
+    // target, toElement , srcElement, currentTarget
+    // clientX, clientY, screenX, screenY
+    // altkey, ctrlkey, shiftkey, keycode
+    // document.getElementById("images").addEventListener(
+    //   "click",
+    //   function (e) {
+    //     console.log("clicked inside the ul");
+    //   },
+    //   false
+    // );
+
+    // document.getElementById("Girl").addEventListener(
+    //   "click",
+    //   function (e) {
+    //     console.log("girl touched");
+    //   },
+    //   false
+    // );
+    // document.getElementById("book").addEventListener(
+    //   "click",
+    //   function (e) {
+    //     e.preventDefault();
+    //     e.stopPropagation();
+
+    //     console.log("BOOK CLICKED");
+    //   },
+    //   false
+    // );
+
+    document.querySelector("#images").addEventListener("click", function (e) {
+      console.log(e.target.parentNode);
+      let removeIt = e.target.parentNode;
+      //remove
+      console.log();
+    });
+    // removeIt.parentNode.removeChild(removeIt);
+  </script>
+</html>
